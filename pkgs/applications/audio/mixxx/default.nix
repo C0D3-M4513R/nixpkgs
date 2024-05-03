@@ -52,6 +52,7 @@
 , upower
 , vamp-plugin-sdk
 , wavpack
+, wrapGAppsHook
 }:
 
 mkDerivation rec {
@@ -65,7 +66,7 @@ mkDerivation rec {
     hash = "sha256-JSWUzerm7D6AKq6g/9eRrt3EE2movRdM+VLUg07sLHo=";
   };
 
-  nativeBuildInputs = [ cmake pkg-config ];
+  nativeBuildInputs = [ cmake pkg-config wrapGAppsHook ];
 
   buildInputs = [
     chromaprint
